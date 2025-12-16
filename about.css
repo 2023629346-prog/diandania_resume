@@ -1,0 +1,245 @@
+
+/* RESET */
+.about-page {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("../images/hero-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* small text */
+.hero-small {
+  position: absolute;
+  top: 80px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #3b2416;
+  z-index: 3;
+}
+
+/* BIG TEXT */
+.hero-title {
+  position: absolute;
+  font-size: 14vw;
+  font-weight: 900;
+  color: #3b2416;
+  letter-spacing: 4px;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.hero-title span {
+  margin-left: 4vw;
+}
+
+/* PERSON IMAGE */
+.hero-person {
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.25));
+
+  position: absolute;
+  bottom: 0;
+  height: 85vh;
+  z-index: 2;
+}
+/* ================= PAGE BAWAH ================= */
+.about-lower {
+  background: #1a1a1a;
+  padding: 120px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  color: #eee;
+  position: relative;
+
+  align-items: start;
+}
+
+/* small text */
+.section-small {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #cfcfcf;
+}
+
+.section-small.center {
+  text-align: center;
+}
+
+/* LEFT */
+.title-left {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.about-desc {
+  line-height: 1.8;
+  max-width: 500px;
+  color: #d6d6d6;
+}
+
+/* FOOD */
+.food-section {
+  margin-top: 80px;
+}
+
+.food-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.food-img {
+  width: 100%;
+  max-width: 420px;
+  margin: 20px 0;
+}
+
+.food-text {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* RIGHT */
+.title-right {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+/* SCREEN SECTION */
+.screen {
+  padding: 20px 10% 80px; /* atas kecil, bawah kekal */
+  color: #fff;
+  margin-top: -120px; /* ⬅️ INI YANG NAIKKAN */
+}
+
+/* STACK VIDEO (ATAS → BAWAH) */
+.video-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* VIDEO CARD */
+.video-card {
+  background: #d8cbb5;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* VIDEO */
+.video-card video {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+/* MOVIE TITLE */
+.movie-title {
+  background: #d8cbb5;
+  color: #111;
+  padding: 15px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 600;
+}
+.right-content {
+  margin-top: -60px;
+}
+.about-lower {
+  align-items: start;
+}
+
+.right-content {
+  margin-top: -60px;
+}
+
+.title-right {
+  margin-top: 0;
+}
+/* ================= SPOTIFY FULL WIDTH FIX ================= */
+
+.spotify-section{
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #f7f0f0, #0b0b0b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.spotify-container{
+  width: 100%;
+  max-width: 1200px; /* ✅ BETUL (px) */
+  padding: 0 8%;
+  text-align: center;
+}
+
+.spotify-title{
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.spotify-sub{
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 45px;
+}
+
+.spotify-box{
+  max-width: 900px;
+  margin: auto;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .spotify-section{
+    padding: 80px 0;
+  }
+
+  .spotify-box iframe{
+    height: 480px;
+  }
+}
+/* BACK TO HOME BUTTON */
+.back-home {
+    text-align: center;
+    margin: 80px 0 20px;
+}
+
+.back-home a {
+    text-decoration: none;
+    padding: 14px 34px;
+    background: #222;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.back-home a:hover {
+    background: #4a2f1c;
+}

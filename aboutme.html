@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="about.css">
+</head>
+
+<body class="about-page">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <p class="hero-small">LET’S GET TO KNOW ME</p>
+
+    <h1 class="hero-title">
+      ABOUT <span>ME</span>
+    </h1>
+
+    <img src="dian4.png" class="hero-person" alt="Me">
+  </section>
+
+  <!-- ================= ABOUT LOWER ================= -->
+  <section class="about-lower">
+
+    <!-- LEFT CONTENT -->
+    <div class="left-content">
+      <small class="section-small">( LET’S GET TO KNOW ME )</small>
+
+      <h2 class="title-left">I’M DIAN</h2>
+
+      <p class="about-desc">
+        My name is Dian Dania binti Misli, and I was born on
+        21st February 2005. I’m currently living at Sepang.
+        I’m someone who enjoys bold energy and fast-paced moments,
+        with strong interest in MotoGP and an undeniable obsession
+        with high end makeup. I appreciate detail, performance,
+        and quality, whether it’s on the race track or in beauty,
+        and that mindset reflects the way I approach my creative work.
+      </p>
+
+      <!-- FOOD -->
+      <div class="food-section">
+        <h2 class="food-title">FAVOURITE FOOD</h2>
+
+        <img src="yakiniku.png" class="food-img" alt="Food">
+
+        <p class="food-text">
+          Sukiyaki Karubi Set Meal<br>
+          Yakiniku Kuro
+        </p>
+      </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <section class="screen">
+      <h2 class="title-right">SCREEN<br>OBSESSIONS</h2>
+
+      <div class="video-stack">
+
+        <!-- VIDEO 1 -->
+        <div class="video-card" onclick="toggleSound(this)">
+          <video autoplay muted loop playsinline>
+            <source src="zenitsu.mov" type="video/mp4">
+          </video>
+          <p class="movie-title">DEMON SLAYER</p>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="video-card" onclick="toggleSound(this)">
+          <video autoplay muted loop playsinline>
+            <source src="rapunzel.MP4" type="video/mp4">
+          </video>
+          <p class="movie-title">TANGLED</p>
+        </div>
+
+      </div>
+    </section>
+
+  </section>
+  <!-- ================= END ABOUT LOWER ================= -->
+
+
+  <!-- ================= SPOTIFY SECTION ================= -->
+  <section class="spotify-section" id="spotify">
+
+    <div class="spotify-container">
+
+      <h2 class="spotify-title">My Spotify Playlist</h2>
+      <p class="spotify-sub">On repeat 🎧</p>
+
+      <div class="spotify-box">
+        <iframe
+          src="https://open.spotify.com/embed/playlist/65VDjk6V7uoTaxfSNSRRg3"
+          width="100%"
+          height="420"
+          frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          style="border-radius:18px;">
+        </iframe>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= VIDEO SOUND SCRIPT ================= -->
+  <script>
+    function toggleSound(card) {
+      const video = card.querySelector("video");
+      video.muted = !video.muted;
+      video.play();
+    }
+  </script>
+<div class="back-home">
+    <a href="index.html">← Back to Home</a>
+</div>
+</body>
+</html>
+

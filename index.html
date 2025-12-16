@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dian Dania | Resume</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="top-header">
+    <div class="logo">
+        <h1>WELCOME TO MY</h1>
+        <h1>RESUME </h1>
+        <span class="edition">2025 EDITION</span>
+        <p class="name">Dian Dania</p>
+        <p class="role">Student | Web Design</p>
+
+    </div>
+
+    <div class="illustration">
+        <!-- optional illustration -->
+    </div>
+</header>
+
+<!-- ABOUT TITLE STRIP -->
+<div class="about-strip">
+    <span>WHERE CONFIDENCE MEETS CAPABILITY</div></span>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+
+    <!-- LEFT SIDE BOX MENU -->
+    <div class="side-box">
+        <a href="aboutme.html" class="side-item">About Me</a>
+        <a href="education.html" class="side-item">Education</a>
+        <a href="gallery.html" class="side-item">Gallery</a>
+        <a href="skill.html" class="side-item">Skills</a>
+        <a href="contact.html" class="side-item">Contact me</a>
+
+        
+
+
+    </div>
+    <!-- TIME & DATE -->
+<div class="datetime-box">
+    <div id="date"></div>
+    <div id="time"></div>
+</div>
+
+
+    <!-- PROFILE IMAGE -->
+    <div class="about-image">
+        <img src="profile.jpg" alt="My Photo">
+    </div>
+
+    <!-- ABOUT TEXT -->
+    <div class="about-text">
+        <h2>Hi! 👋</h2>
+        <p>
+            My name is <b>Dian Dania Binti Misli</b>.  
+            Welcome to my portfolio! Feel free to explore and get to know more about me and what i do.
+        </p>
+
+        
+    
+    </div>
+
+</section>
+
+
+<footer>
+    © 2025 Dian Dania 
+</footer>
+<script>
+function updateDateTime() {
+    const now = new Date();
+
+    const dateOptions = { 
+        weekday: 'long', 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+    };
+
+    const date = now.toLocaleDateString('en-MY', dateOptions);
+    const time = now.toLocaleTimeString('en-MY');
+
+    document.getElementById("date").innerText = date;
+    document.getElementById("time").innerText = time;
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+</script>
+<audio id="bgMusic" loop>
+    <source src="home.mp4" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🔊 Music</button>
+
+<script>
+    const music = document.getElementById("bgMusic");
+
+    function toggleMusic() {
+        if (music.paused) {
+            music.play();
+        } else {
+            music.pause();
+        }
+    }
+</script>
+
+
+</body>
+</html>

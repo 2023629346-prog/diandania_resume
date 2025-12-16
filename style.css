@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f7f3ee;
+    color: #2f3a5a;
+}
+
+/* ===== HEADER ===== */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    
+    /* BACKGROUND IMAGE */
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+.logo h1 {
+    font-size: 80px;
+    line-height: 0.9;
+    color: #441A03;
+}
+
+.edition {
+    background: #180901;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.role {
+    font-size: 14px;
+    color: #6b6b6b;
+}
+
+/* ===== ABOUT STRIP ===== */
+.about-strip {
+    background: #443103;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    gap: 60px;
+
+    /* BACKGROUND IMAGE */
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+/* IMAGE */
+.about-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #443103;
+    padding: 15px;
+}
+
+/* TEXT */
+.about-text h2 {
+    font-size: 40px;
+    color: #2f4b8f;
+}
+
+.about-text p {
+    max-width: 500px;
+    line-height: 1.7;
+}
+
+.contact p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #443103;
+    color: white;
+}
+
+/* ===== ABOUT LAYOUT ===== */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px;
+}
+
+/* ===== LEFT SIDE BOX ===== */
+.side-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.side-item {
+    text-decoration: none;
+    background: #443103;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.side-item:hover {
+    background: #180901;
+    transform: translateX(5px);
+}
+
+/* ===== INFO SECTIONS ===== */
+.info-section {
+    padding: 80px;
+    text-align: center;
+}
+
+.info-section h2 {
+    color: black;
+}
+
+.soft {
+    background: #fff0f5;
+}
+
+.about-strip {
+    background: #4b3a00;
+    color: white;
+    padding: 18px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.about-strip span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* =====================
+   LEOPARD THEME
+===================== */
+
+.leopard-theme {
+    background-color: #f4efe9;
+    font-family: 'Poppins', sans-serif;
+    color: #2b1b10;
+}
+
+/* HEADER */
+.leopard-header {
+    background-image: url("leopard.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.leopard-header h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.leopard-header p {
+    margin-top: 10px;
+    background-color: rgba(0,0,0,0.6);
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DATE & TIME BOX */
+.datetime-box {
+    position: absolute;
+    right: 60px;
+    top: 95px;   /* NAIKKAN KE ATAS */
+    background: rgba(58, 35, 10, 0.9);
+    padding: 18px 25px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* DATE */
+#date {
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.85;
+}
+
+/* TIME */
+#time {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.music-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    background: rgba(255,255,255,0.85);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}

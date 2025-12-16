@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1c1c1c;
+    color: black;
+}
+
+.contact-section {
+    min-height: 100vh;
+    padding: 80px 10%;
+
+    background: url("header.jpg") center / cover no-repeat;
+}
+
+
+.contact-title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 80px;
+    font-weight: 600;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.contact-box {
+    width: 280px;
+    padding: 30px;
+    background: #e4d8c8;
+    border-radius: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.contact-box h3 {
+    text-transform: lowercase;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 14px;
+}
+
+/* SOCIAL ICON */
+.contact-box.social {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-box.social i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-box.social:hover {
+    transform: translateY(-8px);
+    background: #d6c6b1;
+}
+/* BACK TO HOME BUTTON */
+.back-home {
+    text-align: center;
+    margin: 80px 0 20px;
+}
+
+.back-home a {
+    text-decoration: none;
+    padding: 14px 34px;
+    background: #222;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.back-home a:hover {
+    background: #4a2f1c;
+}
+
+.contact-box.social:hover i {
+    color: #000;
+    transform: scale(1.1);
+    transition: 0.3s;
+}

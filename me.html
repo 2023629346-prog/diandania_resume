@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Real Ones</title>
+
+    <link rel="stylesheet" href="me.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="title">Main Character Energy</h1>
+
+    <div class="gallery">
+
+        <div class="polaroid">
+            <img src="me2.jpg">
+        </div>
+
+        <div class="polaroid">
+            <img src="me3.jpg">
+        </div>
+
+        <div class="polaroid">
+            <img src="me4.jpg">
+        </div>
+
+        <div class="polaroid">
+            <img src="me5.jpg">
+        </div>
+
+        <div class="polaroid">
+            <img src="me6.jpg">
+        </div>
+
+        <div class="polaroid">
+            <img src="me1.jpg">
+        </div>
+
+    </div>
+<a href="gallery.html" class="back-btn">
+    <span class="arrow">←</span>
+    <span class="text">Back to Gallery</span>
+</a>
+<audio id="bgMusic" loop>
+    <source src="me.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🔊 Music</button>
+
+<script>
+    const music = document.getElementById("bgMusic");
+
+    function toggleMusic() {
+        if (music.paused) {
+            music.play();
+        } else {
+            music.pause();
+        }
+    }
+</script>
+
+</body>
+</html>
+
