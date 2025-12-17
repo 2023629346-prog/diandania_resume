@@ -42,5 +42,22 @@
     <span class="arrow">←</span>
     <span class="text">Back to Gallery</span>
 </a>
+    <audio id="bgMusic" loop>
+    <source src="cat.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🔊 Music</button>
+
+<script>
+    const music = document.getElementById("bgMusic");
+
+    function toggleMusic() {
+        if (music.paused) {
+            music.play();
+        } else {
+            music.pause();
+        }
+    }
+</script>
 </body>
 </html>
