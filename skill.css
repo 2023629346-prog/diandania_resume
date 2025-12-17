@@ -1,144 +1,169 @@
-*{box-sizing:border-box}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
 body{
-  margin:0;
-  font-family:Poppins,sans-serif;
-  color:#fff;
-  background:radial-gradient(circle at top,#3a2a20,#000);
+    background:#0d0d0d;
+    color:#440E03;
+    padding:80px 8%;
 }
 
-.back-btn{
-  position:fixed;
-  top:20px;left:20px;
-  text-decoration:none;
-  color:#fff;
-  background:rgba(255,255,255,.12);
-  padding:10px 14px;
-  border-radius:20px;
-  border:1px solid rgba(255,255,255,.2);
+/* TITLE */
+.skills-title{
+    text-align:center;
+    font-size:4vw;
+    font-weight:700;
+    margin-bottom:70px;
+    letter-spacing:4px;
 }
 
-.skills-page{
-  width:90%;
-  max-width:1200px;
-  margin:auto;
-  padding:80px 0;
+/* GRID */
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
 }
 
-.hero-title{
-  font-size:80px;
-  margin:0;
+/* CARD */
+.skill-card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 25px 45px rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
 }
 
-.section{margin-top:60px}
-h2{margin-bottom:20px}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:20px;
+.skill-card h2{
+    font-size:18px;
+    margin-bottom:25px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    border-left:4px solid #caa472;
+    padding-left:12px;
 }
 
-.card{
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.15);
-  border-radius:20px;
-  padding:20px;
+/* SKILL */
+.skill{
+    margin-bottom:20px;
 }
 
-.card-top{
-  display:flex;
-  gap:14px;
-  align-items:center;
+.skill-info{
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+    margin-bottom:8px;
 }
 
-.icon-pill{
-  width:46px;height:46px;
-  border-radius:14px;
-  display:grid;place-items:center;
-  background:rgba(255,255,255,.15);
+/* PROGRESS */
+.progress{
+    width:100%;
+    height:10px;
+    background:#2a2a2a;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
 }
 
-.bar-wrap,.lang{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin:14px 0;
+.progress-bar{
+    height:100%;
+    width:0;
+    background:linear-gradient(90deg,#caa472,#ffe0b3);
+    border-radius:20px;
+    position:relative;
+    transition:width 1.8s ease;
 }
 
-.bar{
-  flex: 1;
-  height: 12px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.15);
-  border: 1px solid rgba(255,255,255,.2);
-  overflow: hidden;
-  position: relative;
+/* LAMPU GERAK */
+.progress-bar::after{
+    content:'';
+    position:absolute;
+    top:-5px;
+    right:0;
+    width:20px;
+    height:20px;
+    background:#440E03;
+    border-radius:50%;
+    filter:blur(8px);
+    box-shadow:0 0 15px #ffd89c, 0 0 30px #caa472;
+}
+/* BACK TO HOME BUTTON */
+.back-home {
+    text-align: center;
+    margin: 80px 0 20px;
 }
 
-/* BAR UTAMA */
-.bar-fill{
-  height: 100%;
-  width: 0%;
-  position: relative;
-  border-radius: 999px;
-  background: linear-gradient(
-    90deg,
-    rgba(255,255,255,.25) 0%,
-    rgba(255,255,255,.9) 50%,
-    rgba(255,255,255,.25) 100%
-  );
-  background-size: 200% 100%;
-  animation: movingLight 1.8s linear infinite;
-  box-shadow:
-    0 0 8px rgba(255,255,255,.8),
-    0 0 16px rgba(255,255,255,.4);
+.back-home a {
+    text-decoration: none;
+    padding: 14px 34px;
+    background: #222;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
 }
 
-/* ANIMASI LAMPU */
-@keyframes movingLight {
-  from {
-    background-position: 0% 50%;
-  }
-  to {
-    background-position: 200% 50%;
-  }
+.back-home a:hover {
+    background: #4a2f1c;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: url("gallerybg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  font-family: Arial, sans-serif;
+}
+/* ===== HIGHLIGHT CARD ===== */
+.highlight-card{
+    background:linear-gradient(135deg,#efe4d2,#e7dac6);
+    color:#3b2416;
 }
 
-
-.bar-value{
-  width:40px;
-  text-align:right;
-  font-weight:700;
+.highlight-card h2{
+    border-left:4px solid #caa472;
+    color:#3b2416;
 }
 
-.chips{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
+/* LIST STYLE */
+.strength-list,
+.learning-list{
+    list-style:none;
+    margin-top:20px;
 }
 
-.chip{
-  font-size:11px;
-  padding:6px 10px;
-  border-radius:20px;
-  background:rgba(0,0,0,.3);
-  border:1px solid rgba(255,255,255,.2);
+.strength-list li,
+.learning-list li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:12px;
+    font-size:14px;
 }
 
-.highlight ul{
-  padding-left:18px;
+.strength-list i{
+    color:#caa472;
 }
 
-.cta{
-  display:inline-block;
-  margin-top:12px;
-  color:#fff;
-  text-decoration:none;
-  font-weight:600;
+.learning-list i{
+    color:#b87333;
 }
 
-.lang-card{
-  background:rgba(255,255,255,.08);
-  border-radius:20px;
-  padding:20px;
+/* DIVIDER */
+.divider{
+    width:100%;
+    height:1px;
+    background:rgba(0,0,0,0.15);
+    margin:30px 0;
+}
+
+.span-2{
+    grid-column: span 2;
 }
