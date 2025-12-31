@@ -135,10 +135,10 @@ body {
 /* LIST STYLE */
 .strength-list,
 .learning-list{
-    list-style:none;
+    list-style: disc;      
+    padding-left: 20px;    
     margin-top:20px;
 }
-
 .strength-list li,
 .learning-list li{
     display:flex;
